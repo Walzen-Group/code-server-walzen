@@ -14,4 +14,7 @@ VS Code extensions:
 - Live Share
 - GitHub Copilot
 - GitHub Copilot Chat
+- Node.js Exec
 - Node.js modules intellisense
+- Vue Language Features (Volar)
+- TypeScript Vue Plugin (Volar)

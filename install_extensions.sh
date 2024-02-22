@@ -6,6 +6,8 @@ extensions=(
     "github copilot-chat 0.12.2"
     "miramac vscode-exec-node 0.5.6"
     "leizongmin node-module-intellisense 1.5.0"
+    "Vue volar 1.8.27"
+    "Vue vscode-typescript-vue-plugin 1.8.27"
 )
 
 for extension in "${extensions[@]}"; do
