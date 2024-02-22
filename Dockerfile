@@ -12,6 +12,5 @@ RUN wget -q https://go.dev/dl/$GO_FILE
 RUN  tar -C /usr/local/ -xzf $GO_FILE
 RUN echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc
 RUN rm $GO_FILE
-COPY install_extensions.sh /home/coder/entrypoint.d/
-RUN chmod +x /home/coder/entrypoint.d/install_extensions.sh
+COPY install_extensions.sh /entrypoint.d/
 USER 1000
