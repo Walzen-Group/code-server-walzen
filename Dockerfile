@@ -13,4 +13,5 @@ RUN  tar -C /usr/local/ -xzf $GO_FILE
 RUN echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc
 RUN rm $GO_FILE
 COPY install_extensions.sh /entrypoint.d/
+RUN chmod +x /entrypoint.d/install_extensions.sh
 USER 1000
