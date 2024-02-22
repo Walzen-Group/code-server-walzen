@@ -2,8 +2,7 @@ FROM codercom/code-server:latest
 
 RUN curl -fsSL https://deb.nodesource.com/setup_21.x | sudo bash -
 RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends python3 nodejs
-
-RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" SHELL="$(which bash)" bash -
+RUN sudo npm install -g pnpm
 
 ARG GO_VERSION=1.22.0
 ARG GO_FILE=go$GO_VERSION.linux-amd64.tar.gz
